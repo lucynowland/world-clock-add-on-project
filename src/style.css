@@ -1,7 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Dosis:wght@300&display=swap");
+
+body {
+  background-color: #fe993d;
+}
+
+.container {
+  background-color: #fd4a67;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 65px;
+  margin-bottom: 30px;
+  padding: 35px;
+}
+
 h1 {
+  color: #f2dd80;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 38px;
   text-align: center;
 }
 
+select {
+  border-radius: 15px;
+  display: block;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 6px;
+  width: 95%;
+}
+
+.city {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 20px 0;
+}
+
+.city:last-child {
+  border: none;
+}
+
+h2 {
+  color: #f2dd80;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.current-date {
+  color: #f484da;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+}
+
+.current-time {
+  color: #f2dd80;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.current-time small {
+  color: #f2dd80;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
 footer {
+  color: #f1e9e0;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fd4a66;
+  transition: all 150ms ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: bolder;
 }
