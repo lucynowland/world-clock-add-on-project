@@ -12,38 +12,40 @@
     <div class="container">
       <h1>World Clocks</h1>
 
-      <select name="#" id="#">
+      <select name="#" id="select-cities">
         <option value="">Select a city</option>
-        <option value="">Tokyo</option>
-        <option value="">Singapore</option>
-        <option value="">Krakow</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Asia/Singapore">Singapore</option>
+        <option value="Europe/Warsaw">Krakow</option>
       </select>
 
-      <div class="city" id="oxford">
-        <div>
-          <h2>Oxford 🏴󠁧󠁢󠁥󠁮󠁧󠁿</h2>
-          <div class="current-date"></div>
+      <div id="cities">
+        <div class="city" id="oxford">
+          <div>
+            <h2>Oxford</h2>
+            <div class="current-date"></div>
+          </div>
+
+          <div class="current-time"></div>
         </div>
 
-        <div class="current-time"></div>
-      </div>
+        <div class="city" id="salem">
+          <div>
+            <h2>Salem</h2>
+            <div class="current-date"></div>
+          </div>
 
-      <div class="city" id="salem">
-        <div>
-          <h2>Salem 🇺🇸</h2>
-          <div class="current-date"></div>
+          <div class="current-time"></div>
         </div>
 
-        <div class="current-time"></div>
-      </div>
+        <div class="city" id="aix-en-provence">
+          <div>
+            <h2>Aix-en-Provence</h2>
+            <div class="current-date"></div>
+          </div>
 
-      <div class="city" id="aix-en-provence">
-        <div>
-          <h2>Aix-en-Provence 🇫🇷</h2>
-          <div class="current-date"></div>
+          <div class="current-time"></div>
         </div>
-
-        <div class="current-time"></div>
       </div>
     </div>
 
