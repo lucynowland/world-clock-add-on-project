@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock Add-On Project</title>
   </head>
   <body>
@@ -14,35 +16,34 @@
         <option value="">Select a city</option>
         <option value="">Tokyo</option>
         <option value="">Singapore</option>
-        <option value="">Monaco</option>
         <option value="">Krakow</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="oxford">
         <div>
           <h2>Oxford 🏴󠁧󠁢󠁥󠁮󠁧󠁿</h2>
-          <div class="current-date">Date</div>
+          <div class="current-date"></div>
         </div>
 
-        <div class="current-time">Time <small>AM</small></div>
+        <div class="current-time"></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="salem">
         <div>
           <h2>Salem 🇺🇸</h2>
-          <div class="current-date">Date</div>
+          <div class="current-date"></div>
         </div>
 
-        <div class="current-time">Time <small>AM</small></div>
+        <div class="current-time"></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="aix-en-provence">
         <div>
           <h2>Aix-en-Provence 🇫🇷</h2>
-          <div class="current-date">Date</div>
+          <div class="current-date"></div>
         </div>
 
-        <div class="current-time">Time <small>AM</small></div>
+        <div class="current-time"></div>
       </div>
     </div>
 
