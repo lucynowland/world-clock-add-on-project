@@ -1,5 +1,5 @@
-// Oxford
-function updateOxfordTime() {
+function updateTime() {
+  // Oxford
   let oxfordElement = document.querySelector("#oxford");
   if (oxfordElement) {
     let oxfordDateElement = oxfordElement.querySelector(".current-date");
@@ -11,13 +11,8 @@ function updateOxfordTime() {
       "hh:mm:ss [<small>]A[</small]"
     );
   }
-}
 
-updateOxfordTime();
-setInterval(updateOxfordTime, 1000);
-
-// Salem
-function updateSalemTime() {
+  // Salem
   let salemElement = document.querySelector("#salem");
 
   if (salemElement) {
@@ -30,13 +25,8 @@ function updateSalemTime() {
       "hh:mm:ss [<small>]A[</small]"
     );
   }
-}
 
-updateSalemTime();
-setInterval(updateSalemTime, 1000);
-
-// Aix-en-Provence
-function updateProvenceTime() {
+  // Aix-en-Provence
   let aixEnProvenceElement = document.querySelector("#aix-en-provence");
   if (aixEnProvenceElement) {
     let aixEnProvenceDateElement =
@@ -53,14 +43,18 @@ function updateProvenceTime() {
   }
 }
 
-updateProvenceTime();
-setInterval(updateProvenceTime, 1000);
+updateTime();
+setInterval(updateTime, 1000);
 
 // Select Cities
 let selectCitiesElement = document.querySelector("#select-cities");
 
 function updateCity(event) {
   let timeZone = event.target.value;
+  if (timeZone === "current") {
+    timeZone = moment.tz.guess();
+  }
+
   let cityTime = moment.tz(timeZone);
   let cityName = timeZone.replace("Warsaw", "Krakow").split("/")[1];
 
