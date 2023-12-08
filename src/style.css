@@ -15,11 +15,17 @@ body {
   padding: 35px;
 }
 
-h1 {
+h1 a {
   color: #f2dd80;
+  display: block;
+  margin: 0 auto;
   font-family: "Chakra Petch", sans-serif;
   font-size: 38px;
   text-align: center;
+}
+
+h1 a:hover {
+  text-decoration: none;
 }
 
 select {
